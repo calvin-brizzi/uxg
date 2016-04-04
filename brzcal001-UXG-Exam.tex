@@ -106,36 +106,52 @@ The results, while not statistically significant, suggest that pop-up tutorials 
 \printcopyright
 
 \section{Introduction}
-One of the principal components of flow is that of action-awareness merging \cite{jackson} and we expect that any interruption to the action (such as the game stopping to give the player instructions) will ‘snap’ the player out of this state and require a certain amount of uninterrupted play to re-enter it.
-On the other hand, optimal flow state is achieved when the challenge meets but does not exceed the player’s current skill \cite{nakamura} and we would expect this specific game, due to it’s non-standard control system, to benefit greatly from a tutorial \cite{andersen} accelerating skill acquisition. 
-We want to investigate how these two competing effects (the interruptions breaking the action, but increasing the skill level of the player) ultimately influence flow through the use of a standard questionnaire [[CITE]].
+Little to no research has been done on the effect different tutorial formats have on flow in video games.
+While Csikszentmihalyi is widely credited to bringing the concept of flow to the West  nearly 25 years ago now \cite{optimal}, and there have been numerous papers written on how it relates to video games \cite{flow} the research has never investigated tutorials specifically.\\
+When starting a new game the tutorial is, by design, the first experience players have. With some taking several hours to complete (Final Fantasy XIII being an extreme example where the players only get full control after thirty hours of gameplay) a poor first impression can often deter new players from returning to the game \cite{useMMO}. Furthermore, when research has been done into heuristics for evaluating fun in video games providing ``an interesting and absorbing tutorial'' \cite{federoff} or similar phrasings \cite{desurvire} are frequently on the list, without any indication on what makes a tutorial ``absorbing''.\\ 
+The little research that has been done on the effects of tutorials are focused more around measuring time spent playing and return rate of players \cite{andersen}, or are conducted on such small test groups that any promising results do not achieve statistical significance \cite{hill}. 
 
-Little research has been done on the effects of tutorials on player performance, as the focus seems to revolve more around measuring time spent playing and return rate of players \cite{andersen} or the experiments are conducted on small test groups \cite{hill} that show promising results but no statistical significance. By collecting information on the speed at which players complete post-tutorial levels, we hope to investigate the effect of the interrupting tutorial on the speed at which the player’s learn the game.
+Recognizing what makes a good tutorial could have benefits outside of games: research has been done into using what video games have taught us in other educational settings \cite{videolit}.
 
+As one of the main elements of flow is that of action-awareness merging \cite{jackson} we expect that any interruption to the action (such as the game stopping to give the player instructions) will ‘snap’ the player out of this state and require a certain amount of uninterrupted play to re-enter this state.
+On the other hand, optimal flow state is achieved when the challenge meets but does not exceed the player’s current skill \cite{nakamura}. We expect this specific game, due to it’s non-standard game mechanics (the player control two independent entities in the game, one per hand), to benefit greatly from a tutorial accelerating skill acquisition \cite{andersen} and it is possible that a more obtrusive tutorial would be more effective at teaching the player.
+We hope to discover how these two competing effects (the interruptions breaking the action, but increasing the skill level of the player) ultimately influence flow through the use of a questionnaire widely regarded as the standard measure of flow: the Short Flow State Scale (S FSS)\cite{jackson}.
+
+This paper details an experiment designed to investigate the effect a pop-up tutorial has on flow and the results collected from 10 subjects who took part in the experiment.  
+By collecting information on the speed at which each player complete post-tutorial levels, we also hope to achieve a better understanding of the effect the pop-up tutorial has on the speed at which the players acquire the skills needed to play the game.\\
+The benefits of using Squishy Block as the underlying game are numerous. We were familiar with the source code which made rapid modification and iteration possible. It also fairs well in heuristic evaluations. For example, GameFlow identifies eight major heuristics for evaluating flow in games: concentration, challenge, control, player skill development, clear goals, feedback, immersion and social interaction \cite{sweetser}. The non-standard game mechanics requires concentration to use and is a challenge even for experienced players but, the skills are developed, give a feeling of control within the game. Like all platformers, there is always a clear, achievable goal (reach the end of the level), feedback on progress is given at the end of each level. Finally the combination of all the above elements, along with upbeat music, makes it a game that is easy to get immersed in \cite{sanders}. Social interactions is the only heuristic that it fails to perform in, but introducing a multiplayer element would introduce too many confounding variables.\\
+While heuristic evaluations do have limited usefulness, they are still helpful in identifying issues before players interact with the system \cite{desurvire}, reducing further the risk of something other than our modifications having an effect on the flow score.  
 
 \section{Experiment}
 
-We conducted this experiment as part of the User Experience in Games module of the Computer Science Honours Degree at University of Cape Town. A direct comparison of flow scores collected from two separate groups of users each playing a slightly different version of the same game was made: one group acted as a control and played a version where the tutorial prompts were part of the game's background, incorporated into the level, the other group played a version of the game where at specific intervals a pop-up screen would interrupt the game with instructions for the player.\\
-The purpose of the experiment was to investigate the effect the pop-up tutorial would have on flow as measured by the Short Flow State Scale by Jackson [TO DO REFERENCE!!] which was selected due to it being the closest to a standard for flow measurement.
+We conducted this experiment as part of the User Experience in Games module of the Computer Science Honours Degree at University of Cape Town. Two separate groups of users each playing a slightly different version of the same game were used. One group acted as a control and played a version where the tutorial prompts were part of the game's background, incorporated into the level. The other group played a version of the game where at specific intervals a pop-up screen would interrupt the game with instructions for the player. The flow scored collected across the two groups were compared.\\
+The purpose of the experiment was to investigate the effect the pop-up tutorial would have on flow as measured by the S FSS which was selected due to it being the closest to a standard for flow measurement.\cite{jackson}
 
 \subsection{Participants}
 
-We recruited 10 unpaid volunteers who were mostly second and third year computer science students. We did not collect demographic information. Participants were initially randomly assigned to one of the two conditions until the final participants who were assigned to maintain an even number of players for each version.\\
-Before beginning they each confirmed that they'd never played the game before (as a version is freely available online).
+We recruited 10 unpaid volunteers from the second and third year computer science courses. We did not collect demographic information. Participants were initially randomly assigned to one of the two conditions until the final participants who were assigned to maintain an even number of players for each version.\\
+Before beginning they each confirmed that they'd never played the game before (as a version is freely available online)\cite{ssbb}, had not participated in any other User Experience in Games experiments and provided consent for the data to be collected.
 
 \subsection{Game}
 
-The game used was Squishy Block, a simple 2D platformer. The game was modified to have two versions: a background tutorial version and a pop-up tutorial version.
+The game used was Squishy Block, a simple 2D platformer. 
+The game was modified to have two versions: a background tutorial version and a pop-up tutorial version.
 In the background version, information on how to play was displayed on small signs that were incorporated into the level. In the pop-up version, information on how to play was displayed in full-screen pop-ups that needed to be manually dismissed by the player before the game could be resumed.
 
-It is important to note that the game was identical in every other way, the text displayed in the pop-up and background prompts was the same and the pop-up prompts triggered at the same point that the background signs were visible to the player to ensure any differences in experience were caused by the format of the tutorial and not the contents. The different versions also had identical soundtrack and sound effects.
+It is important to note that the game was identical in every other way. The text displayed in the pop-up and background prompts was the same and the pop-up prompts triggered at the same point that the background signs were visible in order to ensure any differences in experience were as a result of the format of the tutorial and not the contents. The different versions also had identical an soundtrack and sound effects.
 
-The game consisted of two levels; the first contained the tutorial which intruduced the player to the controls and concepts of the game gradually, just before those controls or concepts were necessary (explaining how to deal with enemies just before the first enemy was encountered for example), the second level had no tutorial elements and was designed in such a way to test the player on everything introduced in the first level.
+The game consisted of two levels; the first contained the tutorial which introduced the player to the controls and concepts of the game gradually, as those controls or concepts became necessary (for example explaining how to deal with enemies just before the first enemy was encountered). The second level had no tutorial elements and was designed to test the player on everything introduced in the first level.
+
+\subsection{Location and Equipment}
+The experiment was conducted in an isolated room, with only the experimenter and the subject present to reduce possible distractions.
+The subject was also given a pair of noise-isolating headphones that were worn while playing the game but removed otherwise.
+All subjects used the same machine to fill out questionnaires and play the game: a laptop with an Intel i7 processor and integrated Intel HD 5500 Graphics. The game is lightweight and therefore ran at a stable 60fps on the laptop's built-in display which has a resolution of 1920x1080.\\
+All subjects used the same generic external keyboard during play and a generic USB mouse was provided but only used while filling out the forms (the game controls are entirely keyboard based).   
 
 \subsection{Procedure}
 The experiment was conducted in three phases: an initial brief questionnaire, the game itself and then a final questionnaire.\\
-In the initial phase subjects were briefed on how the experiment would be conducted and asked to rate their previous experience with platformers. Then they switched over to the game, played through the two levels (or until their character died three times) and finally switched back to the final questionnaire, which was the Short Flow State Scale by Jackson.\\
-The players were given no instructions on how to play the game before beginning (as this was left up to the tutorial).
+In the initial phase subjects were briefed on how the experiment would be conducted and asked to rate their previous experience with platformers. They then switched over to the game and played through the two levels (or until their character died three times) before completing the final questionnaire: the Short Flow State Scale (S FSS)\cite{jackson}.\\
+The players were given no instructions on how to play the game before launching the game (as this was guided by the tutorial).
 
 
 %\begin{figure}[ht]
@@ -147,7 +163,7 @@ The players were given no instructions on how to play the game before beginning 
 
 \section{Results}
 
-Descriptive statistics for the samples are shown in table \ref{SFSS descriptive}. The data collected was analyzed using a two-tailed unpaired t-test to test for differences in the means of the flow score between the two versions of the game. The results, due probably to the small sample size, were statistically insignificant and are presented in table \ref{ttest}.
+Descriptive statistics for the samples are shown in table \ref{SFSS descriptive}. The data collected was analyzed using a two-tailed unpaired t-test to test for differences in the means of the flow score between the two versions of the game. The results, likely influenced by the small sample size, were statistically insignificant and are presented in table \ref{ttest}.
 
 \begin{table}[ht]
   \centering
@@ -177,18 +193,18 @@ Descriptive statistics for the samples are shown in table \ref{SFSS descriptive}
 \end{table}
 
 \subsection{Discussion}
-The results, while statistically insignificant, seem to imply the counterintuitive conclusion that pop-up tutorials, even though they interrupt the game initially, create an increase in scores in an established flow questinnaire.
+The results, while statistically insignificant, seem to imply the counter-intuitive conclusion that pop-up tutorials, even though they interrupt the game initially, create an increase in scores in an established flow questinnaire.
 
-The differences in the mean are small and may, in part be explained by the fact that the pop-up version of the game had, on average, participants which rated their previous experience with platformers higher than the control group. 
+The differences in the mean are small and may, in part be explained by the fact that the pop-up version of the game included participants who generally rated their previous experience with platformers higher than the control group. 
 
-\section{Conclusion}
+\section{Conclusion and Future Work}
 The results presented in the paper could be a good starting point for a larger experiment where factors such as previous experience can be better controlled for.
 
-There are various criticisms that can be directed to this experiment. Firstly, and most glaringly, the experiment size is simply too small to be able to reach statistically significant conclusions. The second issue with the experiment is that the game selected, while simple in concept, can be frustrating hard for low-experience players and subsequent experiments might want to select only subjects who are already comfortable with platformers. Finally senior Computer Science students may not be representative of the gaming population so alternative recruitment strategies might be necessary.
+There are various criticisms that can be directed to this experiment. Most importantly, the sample size is too small to be able to reach statistically significant conclusions. Secondly the game selected, while simple in concept, can be frustrating hard for low-experience players and subsequent research should consider selecting only participants who are already comfortable with platformers. Finally, senior Computer Science students may not be representative of the gaming population, and alternative recruitment strategies might be necessary.
 
 This experiment also focused exclusively on the effects the pop-up tutorial would have on flow, but an analysis of their effects on presence might also be useful.
 
-The results of any further studies would allow game creators to design tutorials in a way that aids flow in the game, creating an overall better experience for players.
+Further research in this area could be beneficial in enabling game creators to design tutorials in a way that aids flow in the game,thereby creating an overall better experience for players.
 
 \section*{Acknowledgements}
 
