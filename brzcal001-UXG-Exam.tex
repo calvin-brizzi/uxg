@@ -69,7 +69,7 @@
 
 \begin{abstract}
 
-We present the results from an experiment (n=10) which uses a standard measure of flow to measure the effect of pop-up tutorials on player experience.\\
+We present the results from an experiment (n=10) which uses a standard measure of flow to investigate the effect of pop-up tutorials on player experience.\\
 The results, while not statistically significant, suggest that pop-up tutorials may have a positive effect on flow but require further studies.
 
 \end{abstract}
@@ -106,12 +106,12 @@ The results, while not statistically significant, suggest that pop-up tutorials 
 \printcopyright
 
 \section{Introduction}
+One of the principal components of flow is that of action-awareness merging \cite{jackson} and we expect that any interruption to the action (such as the game stopping to give the player instructions) will ‘snap’ the player out of this state and require a certain amount of uninterrupted play to re-enter it.
+On the other hand, optimal flow state is achieved when the challenge meets but does not exceed the player’s current skill \cite{nakamura} and we would expect this specific game, due to it’s non-standard control system, to benefit greatly from a tutorial \cite{andersen} accelerating skill acquisition. 
+We want to investigate how these two competing effects (the interruptions breaking the action, but increasing the skill level of the player) ultimately influence flow through the use of a standard questionnaire [[CITE]].
 
-Ut sagittis arcu ut turpis sodales, nec venenatis magna efficitur. Fusce non rhoncus risus, ac tincidunt arcu. Nulla lacus odio, accumsan tempor dolor sit amet, tincidunt porttitor justo. Quisque vulputate ex ac purus ultrices tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur sed ullamcorper metus. Phasellus eu purus eget leo vulputate auctor vel scelerisque velit.
+Little research has been done on the effects of tutorials on player performance, as the focus seems to revolve more around measuring time spent playing and return rate of players \cite{andersen} or the experiments are conducted on small test groups \cite{hill} that show promising results but no statistical significance. By collecting information on the speed at which players complete post-tutorial levels, we hope to investigate the effect of the interrupting tutorial on the speed at which the player’s learn the game.
 
-
-  
-Etiam sed mattis justo. Mauris lorem sapien, pellentesque vel viverra varius, porta ut nisi. Cras vel interdum dui, vitae fermentum elit. Nulla eu libero finibus, bibendum elit nec, ullamcorper velit. Donec ultrices, purus id ullamcorper euismod, ipsum erat sodales augue, ut sagittis sapien magna nec ex. Nulla massa arcu, suscipit non molestie ut, tristique id tellus. Maecenas nec malesuada mauris, vitae mattis sem. Quisque at risus quis arcu eleifend lacinia non sed neque.
 
 \section{Experiment}
 
@@ -147,17 +147,31 @@ The players were given no instructions on how to play the game before beginning 
 
 \section{Results}
 
-Descriptive statistics for the samples are shown in table 1. The data collected was analyzed using a two-tailed unpaired t-test to test for differences in the means of the flow score between the two versions of the game. The results, due probably to the small sample size, were statistically insignificant and are presented in table 2.
+Descriptive statistics for the samples are shown in table \ref{SFSS descriptive}. The data collected was analyzed using a two-tailed unpaired t-test to test for differences in the means of the flow score between the two versions of the game. The results, due probably to the small sample size, were statistically insignificant and are presented in table \ref{ttest}.
 
 \begin{table}[ht]
   \centering
   \caption{S FSS descriptive statistics}
+  \label{SFSS descriptive}
   \begin{tabular}{|c|c|c|c|}
   	\hline
   	\textbf{Version} & \textbf{Mean} & \textbf{Standard Deviation} & \textbf{N}\\
     \hline
-    background & 3.62 & 2 & 5 \\
-	pop-up & 4.02 & 2 & 5 \\
+    background & 3.62 & 0.45 & 5 \\
+	pop-up & 4.02 & 0.51 & 5 \\
+    \hline
+  \end{tabular}
+\end{table}
+
+\begin{table}[ht]
+  \centering
+  \caption{Unpaired t test result}
+  \label{ttest}
+  \begin{tabular}{|c|c|}
+  	\hline
+  	\textbf{p} & \textbf{Difference of means}\\
+    \hline
+    .2223 & 0.40 \\
     \hline
   \end{tabular}
 \end{table}
@@ -178,9 +192,9 @@ The results of any further studies would allow game creators to design tutorials
 
 \section*{Acknowledgements}
 
-Prof Edwin H. Blake and Jacob Clarkson for feedback on experiment proposal and design.
+Thanks to Prof Edwin H. Blake and Jacob Clarkson for feedback on experiment proposal and design.
 
 \bibliographystyle{acmsiggraph}
 \nocite{*}
-\bibliography{template}
+\bibliography{brzcal001-UXG-Exam}
 \end{document}
