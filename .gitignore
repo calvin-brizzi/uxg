@@ -1,6 +1,7 @@
 
 # Created by https://www.gitignore.io/api/latex
 *.swp
+out.txt
 
 ### LaTeX ###
 *.acn
